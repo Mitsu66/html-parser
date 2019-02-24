@@ -1,0 +1,9 @@
+{
+    "require": {
+        "atrox/matcher": "^1.1",
+        "symfony/css-selector": "^3.4"
+    },
+    "autoload": {
+        "psr-4": {"Mitseo\\Scraper\\": "src\\Scraper\\"}
+    }
+}
