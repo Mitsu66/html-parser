@@ -4,7 +4,7 @@
     "type": "library",
     "version": "1.0.0",
     "minimum-stability": "dev",
-    "prefer-stable": true,
+    "prefer-stable": false,
     "require": {
         "atrox/matcher": "^1.1",
         "symfony/css-selector": "^4.2",
