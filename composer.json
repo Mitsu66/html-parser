@@ -15,5 +15,7 @@
     ],
     "autoload": {
         "psr-4": {"Mitseo\\Scraper\\": "src/"}
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
