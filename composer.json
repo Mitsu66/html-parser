@@ -2,12 +2,12 @@
     "name": "mitseo/scraper",
     "description": "Parse document with xpath,css selector and regex.",
     "type": "library",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "minimum-stability": "dev",
     "prefer-stable": false,
     "require": {
         "atrox/matcher": "^1.1",
-        "symfony/css-selector": "^3.4.22"
+        "symfony/css-selector": "^3.4.22git"
     },
     "license": "MIT",
     "authors": [
