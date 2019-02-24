@@ -2,6 +2,7 @@
     "name": "mitseo/scraper",
     "description": "Parse document with xpath,css selector and regex.",
     "type": "library",
+    "version": "1.0.0",
     "minimum-stability": "dev",
     "require": {
         "atrox/matcher": "^1.1",
