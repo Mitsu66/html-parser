@@ -1,13 +1,15 @@
 
 # Scraper
 
-This library is helps you to parse data with different resources :
+This library helps you to parse data with different resources :
 
 - Regex
 - Xpath
 - CSS Selector
 
-## Scraper with Regex
+**Author :** [Mitsu](https://twitter.com/Mitsufr)
+
+## Parse with Regex
 
 ```php
 use Mitseo\Scraper\Scraper;
@@ -17,7 +19,7 @@ $regex2 = Scraper::regex("/([0-9]{5})/")->extractFirst($dom);
 $regex3 = Scraper::regex("/([0-9]{5})/")->extractAll($dom);
 ```
 
-## Scraper with Xpath
+## Parse with Xpath
 
 ```php
 use Mitseo\Scraper\Scraper;
@@ -30,7 +32,7 @@ $xpath3 = Scraper::xpath("//a")->extractAll($dom);
 $xpath4 = Scraper::xpath("//a",["anchor"=>".","href"=>"@href"])->extractTree($dom);
 ```
 
-## Scraper with CSS Selector
+## Parse with CSS Selector
 
 ```php
 use Mitseo\Scraper\Scraper;
