@@ -1,9 +1,6 @@
 <?php
 namespace Mitseo\Scraper;
 
-require('regexExtractor.php');
-
-
 class Scraper{
 
     public static function regex(string $rule)
