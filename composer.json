@@ -7,7 +7,7 @@
     "prefer-stable": false,
     "require": {
         "atrox/matcher": "^1.1",
-        "symfony/css-selector": "^4.2"
+        "symfony/css-selector": "^3.4.22"
     },
     "license": "MIT",
     "authors": [
