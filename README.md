@@ -1,34 +1,42 @@
-<?php
-require('vendor/autoload.php');
 
+# Scraper
+
+This library is helps you to parse data with different resources :
+
+- Regex
+- Xpath
+- CSS Selector
+
+## Scraper with Regex
+
+```php
 use Mitseo\Scraper\Scraper;
-
-$dom = file_get_contents('https://www.mitseo.me');
-
-/*
-*   Scraper with Regex
-*/
 
 $regex1 = Scraper::regex("/[0-9]{5}/")->match($dom);
 $regex2 = Scraper::regex("/([0-9]{5})/")->extractFirst($dom);
 $regex3 = Scraper::regex("/([0-9]{5})/")->extractAll($dom);
+```
 
-/*
-*   Scraper with Xpath
-*/
+## Scraper with Xpath
+
+```php
+use Mitseo\Scraper\Scraper;
+
+$dom = file_get_contents('https://www.lemonde.fr/');
 
 $xpath1 = Scraper::xpath("//a")->match($dom);
 $xpath2 = Scraper::xpath("//a")->extractFirst($dom);
 $xpath3 = Scraper::xpath("//a")->extractAll($dom);
 $xpath4 = Scraper::xpath("//a",["anchor"=>".","href"=>"@href"])->extractTree($dom);
+```
 
-/*
-*   Scraper with CSS Selector
-*/
+## Scraper with CSS Selector
+
+```php
+use Mitseo\Scraper\Scraper;
 
 $css1 = Scraper::css("h1#truc")->match($dom);
 $css2 = Scraper::css("h1")->extractFirst($dom);
 $css3 = Scraper::css("a")->extractAll($dom);
+```
 
-
-var_dump($regex2);
