@@ -7,7 +7,7 @@ use Mitseo\Scraper\XpathExtractor;
 
 
 
-class CssExtractor
+class CssExtractor extends Extractor
 {
     private $rule;
     private $converter;

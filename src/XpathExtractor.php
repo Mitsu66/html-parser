@@ -3,9 +3,10 @@
 namespace Mitseo\Scraper;
 
 use Atrox\Matcher;
+use PHPUnit\Framework\Constraint\Exception;
 
 
-class XpathExtractor
+class XpathExtractor extends Extractor
 {
     private $rule;
     private $tree;
@@ -39,7 +40,7 @@ class XpathExtractor
     }
 
     public function extractTree(string $str)
-    {
+    {   
         $m=Matcher::multi($this->rule,$this->tree)->fromHtml();
         $match = $m($str);
         return $match;
