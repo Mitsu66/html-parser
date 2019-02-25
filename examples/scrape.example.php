@@ -19,4 +19,3 @@ $str = "<html><body><h2>Titre1</h2><h2>Titre2</h2><h2>Titre3</h2></body></html>"
 
 
 var_dump($xpathCount);
-echo "\r\n";

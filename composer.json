@@ -6,7 +6,7 @@
     "prefer-stable": false,
     "require": {
         "atrox/matcher": "^1.1",
-        "symfony/css-selector": "^3.4.22",
+        "symfony/css-selector": "^3.4.22"
     },
     "require-dev": {
         "phpunit/phpunit": "*"
